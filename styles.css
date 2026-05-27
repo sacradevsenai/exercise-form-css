@@ -1,27 +1,211 @@
-body{
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-form.inscricao{
-    background-color: white;
-    border-radius: 12px;
-    padding: 40px 10px;
+form.inscricao {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  min-height: 35rem;
+  background-color: white;
+  border-radius: 12px;
+  margin: 0;
+  font-weight: bold;
+  padding: 0px 25px;
 }
 
-.inscricao h2{
-    text-align: center;
-    color: blue;
+.inscricao input,
+.inscricao select,
+.inscricao textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
 }
 
-.btn-front{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.inscricao h2 {
+  text-align: center;
+  color: #004a93;
+}
+
+.btn-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #004a93;
+  border-color: #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.inscricao a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao textarea {
+  height: 80px;
+}
+
+/* página de confimação*/
+.last-page h2 {
+  color: white;
+  text-align: center;
+}
+
+.last-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*o botão voltar foi tbm usado na página enriquecemento*/
+
+.voltar {
+  background-color: #0ecc00;
+}
+.voltar:hover {
+  background-color: aqua;
+}
+
+/*página de enriquecemento*/
+body.formulario {
+  display: block;      /* Desfaz o flex centralizado que cortava o topo problema que travou a resolução */
+  height: auto;        /* Permite que a altura da página cresça além do monitor, garantindo o uso de formulários*/
+  overflow-y: auto;    /* Ativa a rolagem vertical para navegar pelo formulário */
+  padding: 30px 0;     /* Dá um respiro pro título h2 não colar no topo do navegador */
+}
+
+/* CONTAINER: Controla apenas o posicionamento e o espaço entre eles */
+.btn-end {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ESTILO BASE: Aplica o comportamento idêntico para os três botões */
+.btn-end button {
+  /* Trocamos o padding por tamanhos fixos para neutralizar qualquer herança do 'Voltar' */
+  width: 130px; 
+  height: 40px;
+  box-sizing: border-box;
+  
+  /* Unificamos as 3 linhas de borda em uma só, definindo a cor preta fixa */
+  border: 1px solid #000; 
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+  /* O navegador alinha o texto perfeitamente sem precisar de flexbox aqui dentro */
+  text-align: center; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* HOVER GERAL: Arrumando o efeito de crescimento para funcionar em 2D */
+.btn-end button:hover {
+  transform: scale(1.05); /* Agora o botão realmente cresce ao passar o mouse */
+  color: black;
+}
+
+.reset {
+  background-color: red;
+}
+.reset:hover {
+  background-color: rgb(182, 81, 81);
+}
+
+.enviar {
+  background-color: #004a93;
+}
+.enviar:hover {
+  background-color: #215f9c;
+}
+
+
+.dados-enriquecimento {
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  
+  justify-content: flex-start;
+  min-height: 100vh;
+
+  background-color: whitesmoke;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1200px;
+  font-weight: bold;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  gap: 25px;
+}
+
+
+.cadastro-grupo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  margin: 0;
+  font-weight: bold;
+
+  padding: 20px 25px;
+  width: 90%;
+  color: black;
+}
+
+.campo-enr,
+.campo-end,
+.contato {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  margin: 0;
+  font-weight: bold;
+  padding: 0px 25px;
+  width: 100%;
+}
+
+.campo-opcao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* Dá um respiro maneiro entre a bolinha e o texto */
+  margin-bottom: 12px;
+}
+
+.titulo-campo {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
