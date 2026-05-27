@@ -1,27 +1,66 @@
-body{
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-form.inscricao{
-    background-color: white;
-    border-radius: 12px;
-    padding: 40px 10px;
+form.inscricao {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  background-color: white;
+  border-radius: 12px;
+  margin: 0;
+  font-weight: bold;
+  padding: 0px 25px;
 }
 
-.inscricao h2{
-    text-align: center;
-    color: blue;
+.inscricao input,
+.inscricao select,
+.inscricao textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
 }
 
-.btn-front{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.inscricao h2 {
+  text-align: center;
+  color: #004a93;
+}
+
+.btn-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #004a93;
+  border-color: #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  color: white;
+}
+
+.inscricao a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao textarea {
+  height: 80px;
 }
