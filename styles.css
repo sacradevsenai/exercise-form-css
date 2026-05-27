@@ -12,6 +12,7 @@ form.inscricao {
   display: flex;
   flex-direction: column;
   height: 90%;
+  min-height: 35rem;
   background-color: white;
   border-radius: 12px;
   margin: 0;
@@ -53,6 +54,7 @@ form.inscricao {
   width: 100%;
   padding: 10px 12px;
   color: white;
+  cursor: pointer;
 }
 
 .inscricao a {
@@ -63,4 +65,41 @@ form.inscricao {
 
 .inscricao textarea {
   height: 80px;
+}
+
+.last-page h2{
+    color: white;
+    text-align: justify;
+}
+
+.last-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirmacao {
+    padding: 9px 35px;
+    background-color: #0ecc00;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+
+    outline: none;
+    border-radius: 3px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    transition: background-color 0.3s ease;
+}
+
+.confirmacao:hover{
+    transform: scaleZ(1.05);
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
 }
