@@ -1,0 +1,27 @@
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form.inscricao{
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 10px;
+}
+
+.inscricao h2{
+    text-align: center;
+    color: blue;
+}
+
+.btn-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

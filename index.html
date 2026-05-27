@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição - Senai</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <meta name="description" content="">
+
+    
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+    <form class="inscricao">    
+        <h2>Inscrição SENAI</h2>
+        <label for="name">Nome completo:</label><br>
+        <input type="text" name="Nome" id="name" required><br>
+        <label for="email">E-mail:</label><br>
+        <input type="text" name="email" id="email" required><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="text" name="telefone" id="telefone" required><br>
+        
+        <label for="curso">Curso desejado: </label><br>
+        <select name="curso" id="curso" required>
+            <option value="desenvolvimento">Técnico em Desenvolvimento de Sistemas</option>
+            <option value="automacao">Técnico em Automação Industrial</option>
+            <option value="informatica">Técnico em Informática</option>
+            <option value="redes">Técnico em Redes de Computadores</option>
+            <option value="jogos">Técnico em Programação de Jogos Digitais</option>
+        </select><br>
+        <label for="observacao">Observações</label><br>
+        <textarea name="observacao" id="observacao" required></textarea><br>
+        
+        <div class="btn-front">
+            <button type="submit">Enviar inscrição</button><br>
+            <a href="">Já sou aluno!</a>
+        </div>
+    </form>
+</body>
+</html>
