@@ -4,29 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de inscrição - Senai</title>
-    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
 
-    <meta name="description" content="" />
+    <meta name="description" content="Tela de acesso ao sistema de cadastro do SENAI." />
 
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" />
   </head>
   <body>
     <form action="confirmacao.html" class="inscricao">
       <h2>Inscrição SENAI</h2>
 
       <div class="grupo">
-        <label for="name">Nome completo:</label><br />
-        <input type="text" name="Nome" id="name" required /><br />
+        <label for="nome">Nome completo:</label><br />
+        <input type="text" name="Nome" id="nome" required /><br />
       </div>
 
       <div class="grupo">
-        <label for="email">E-mail:</label><br />
-        <input type="text" name="email" id="email" required /><br />
+        <label for="email-inscricao">E-mail:</label><br />
+        <input type="email" name="email" id="email-inscricao" required /><br />
       </div>
       <div class="grupo">
         <label for="telefone">Telefone:</label><br />
@@ -53,9 +47,8 @@
         <label for="observacao">Observações:</label><br />
         <textarea name="observacao" id="observacao" required></textarea><br />
       </div>
-
-      <button class="btn-front" type="submit" onclick="confirmacao.html">Enviar inscrição</button><br />
-      <a href="">Já sou aluno!</a>
+      <button class="btn-front" type="submit">Enviar inscrição</button><br />
+      <a href="enriquecimento.html">Já sou aluno!</a>
     </form>
   </body>
 </html>
